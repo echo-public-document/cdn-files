@@ -20,8 +20,9 @@
 		iframe.setAttribute("frameborder", "0");
 		iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
 		iframe.setAttribute("allowfullscreen", "");
-		iframe.src = "https://www.youtube.com/embed/${videoId}?autoplay=1";
+		iframe.src = "https://www.youtube.com/embed/${videoId}";
 
 		el.innerHTML = '';
 		el.appendChild(iframe);
+
 	});
