@@ -1,0 +1,33 @@
+	.yt-lite {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16 / 9; /* 自动保持比例 */
+		background-color: #000;
+		background-size: cover;
+		background-position: center;
+		cursor: pointer;
+		overflow: hidden;
+		display: block; /* 防止在 inline 布局时被压缩变形 */
+	}
+
+
+	.yt-lite > .play {
+		width: 68px;
+		height: 48px;
+		background: #ff0000;
+		border-radius: 20%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.yt-lite > .play::before {
+		content: '';
+		border-style: solid;
+		border-width: 15px 0 15px 26px;
+		border-color: transparent transparent transparent #fff;
+		position: absolute;
+		left: 25px;
+		top: 10px;
+	}
